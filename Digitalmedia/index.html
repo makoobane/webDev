@@ -19,7 +19,69 @@
       <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- header -->
+     <header class="header">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="./assets/images//logo.svg" alt="Digitalmedia home" width="205" height="40">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a class="navbar-link" href="#">How it Works</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#">Our Work</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <a href="#" class="btn btn-secondary">Try it now</a>
+            <!-- for phones menu open nav -->
+             <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggle-btn>
+                    <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                    <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+             </button>
+             <div class="overlay" data-overlay></div>
+        </div>
+     </header>
     
+     <!-- main part -->
+      <main>
+        <article>
+            <!-- hero -->
+             <section class="section hero" aria-label="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 title hero-title">
+                            We Take Care of Your Brand
+                        </h1>
+                        <p class="hero-text">
+                            Use this section to describe your company and the products you offer. 
+                            You could share your company’s story and details about why you are in business.
+                        </p>
+                        <div class="input-wrapper">
+                            <input type="email" name="email_address"  class="input-field" placeholder="Enter Your Email">
+                            <button type="submit" class="btn btn-primary">Let's Talk</button>
+                        </div>
+                    </div>
+                     <figure class="hero-banner">
+                        <img src="./assets/images/hero-banner.png" alt="hero banner" class="w-100" width="835" height="960">
+                        <img src="./assets/images/hero-icon-1.png" alt="Youtube" class="shape shape-1" width="100" height="100">
+                        <img src="./assets/images/hero-icon-2.png" alt="Twitter" class="shape shape-2" width="120" height="120">
+                        <img src="./assets/images/hero-icon-3.png" alt="Instagram" class="shape shape-3" width="150" height="150">
+                     </figure>
+                </div>
+             </section>
+        </article>
+      </main>
     <!-- custom js scripts -->
     <script src="./assets/js/script.js"></script>
     <!-- ionicon link -->
