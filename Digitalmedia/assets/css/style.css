@@ -170,6 +170,18 @@ body.nav-active{
 .section-text{
   margin-block: 15px 50px;
 }
+.img-holder{
+  background-color: var(--bg-white-alpha-10);
+  overflow: hidden;
+  aspect-ratio: var(--width)/var(--height);
+}
+
+.image-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-2);
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -321,17 +333,87 @@ display: none;
 /*-----------------------------------*\
   #WORK
 \*-----------------------------------*/
+.work-card .card-banner{
+  border-radius: var(--radius-40);
+  margin-bottom: 20px;
+}
 
+.work-card:is(:hover, :focus-within) .image-cover{
+  transform: scale(1.2);
+}
 
-
+.product-item .card-title{
+  margin-block-end: 12px;
+  transition: var(--transition-1);
+}
+.product-item .card-title:is(:hover,:focus-visible){
+  color: var(--text-sunglow);
+}
+.work .btn{
+  margin-block-start: 60px;
+  margin-inline: auto;
+}
 
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer{
+  background-color: var(--bg-russian-violet);
+}
+.footer-top{
+  padding-block-start: var(--section-spacing);
+}
+.footer .container{
+display: grid;
+gap: 50px;
 
-
-
+}
+.footer-brand{
+  max-width: max-content;
+  margin-inline: auto;
+}
+.social-list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.social-link{
+  font-size: 2.2rem;
+  color: var(--text-sunglow);
+}
+.footer .btn{
+  font-size: var(--fontSize-5);
+  padding: 50px;
+}
+.footer-link{
+  display: grid;
+  gap: 15px;
+  place-items: center;
+  font-weight: var(--weight-semiBold);
+  font-size: var(--fontSize-6);
+}
+.footer-link:is(:hover,:focus-visible){
+  color: var(--text-sunglow);
+}
+.footer-bottom{
+  border-top: 1px solid var(--text-white-alpha-60);
+  padding-block: 30px;
+}
+.footer-bottom-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-block-start: 30px;
+}
+.footer-bottom .Link{
+  color: var(--text-sunglow);
+  font-size: var(--fontSize-4);
+  text-decoration-line: underline;
+  text-decoration-color: var(--bg-vivid-violet);
+}
 
 
 /*-----------------------------------*\
