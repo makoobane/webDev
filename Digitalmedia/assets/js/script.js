@@ -19,3 +19,15 @@ const toggleActive=function(){
 }
 
 addEventsOnManyElements([menuButton,overlay],"click",toggleActive);
+
+// PARALLAX EFFECT
+const elementsForParallaxEffect=document.querySelectorAll("[data-parallax]");
+window.addEventListener("mousemove",(event)=>{
+    let length=elementsForParallaxEffect.length;
+    for(let i=0;i<length;i++){
+        let speed=Number(elementsForParallaxEffect[i].dataset.parallaxSpeed);    
+        const dx=(event.clientX/window.innerWidth)*speed;
+        const dy=(event.clientY/window.innerHeight)*speed;
+        elementsForParallaxEffect[i].animate({transform:`translate(${dx}px,${dy}px`},{fill:"forwards",duration:500});
+    }
+})
